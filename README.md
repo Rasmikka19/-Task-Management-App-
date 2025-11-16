@@ -1,16 +1,91 @@
-# React + Vite
+📝 Task Management App (React + Tailwind CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully functional Task Management Application built with React JS, showcasing intermediate-level concepts like React Router, custom hooks, form handling, tables, pagination, and localStorage data management.
 
-Currently, two official plugins are available:
+This project is perfect for practicing real-world React patterns used in production apps.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
+🔹 Routing (React Router DOM)
 
-## React Compiler
+Home Page – Displays all tasks in a table.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Add Task Page – Create new tasks using a validated form.
 
-## Expanding the ESLint configuration
+Edit Task Page – Update existing tasks.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Task Details Page – View individual task details.
+
+Completed Tasks Page – Filtered list of completed tasks.
+
+🔹 Form Handling
+
+Reusable form logic through a custom hook: useTaskForm.js
+
+Input validation & clean state management.
+
+Used for both creating and editing tasks.
+
+🔹 Data Management
+
+Tasks stored in localStorage to persist data.
+
+State updates handled through React hooks.
+
+🔹 Task Table with Utilities
+
+TaskList.jsx displays tasks in a structured table.
+
+Sorting and filtering options can be applied.
+
+Row actions: Edit, Delete, Mark as Complete.
+
+🔹 Pagination & Search
+
+Pagination.jsx handles client-side pagination.
+
+Search bar to quickly find tasks by title or description.
+
+📂 Project Structure
+src/
+ ├── components/
+ │     ├── Pagination.jsx
+ │     └── TaskList.jsx
+ │
+ ├── hooks/
+ │     └── useTaskForm.js
+ │
+ ├── pages/
+ │     ├── HomePage.jsx
+ │     ├── TaskPage.jsx
+ │     ├── AddTask.jsx
+ │     ├── EditTask.jsx
+ │     └── CompletedTasks.jsx
+ │
+ ├── App.jsx
+ └── main.jsx
+
+🛠 Tech Stack
+
+React JS
+
+React Router DOM
+
+Tailwind CSS
+
+LocalStorage for persistence
+
+Custom Hooks for form management
+
+🎯 Outcome
+
+This project demonstrates:
+
+Effective routing structure
+
+Clean form handling with reusable logic
+
+Real-world table rendering with pagination and search
+
+Managing tasks using localStorage
+
+A polished UI with Tailwind CSS
